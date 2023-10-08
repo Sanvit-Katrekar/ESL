@@ -1,0 +1,1 @@
+SIGN_DURATION = 4 # In seconds
