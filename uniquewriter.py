@@ -6,7 +6,7 @@ unique_lines = []
 duplicate_lines = []
 
 # Open the input text file and create an output text file for unique lines
-with open('english-links.txt', 'r') as input_file, open('unique-english-links.txt', 'w') as output_file:
+with open('chinese-links.txt', 'r') as input_file, open('unique-chinese-links.txt', 'w') as output_file:
     for line in input_file:
         # Remove leading and trailing whitespace 
         cleaned_line = line.strip()

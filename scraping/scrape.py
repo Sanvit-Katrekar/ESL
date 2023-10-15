@@ -31,12 +31,15 @@ def scrape_esl_page(language: Language):
             link = word_details.find('a').get('href')
             if meaning:
                 f.write(f"{meaning}: {link}\n")
-                if(flag):
-                    with open("chinese.txt","a") as g:
+                with open("all_langs.txt","a") as g:
                         g.write(meaning+'\n')
-                else:
+                """if(flag):
+                    with open("chinese.txt","a") as g:
+                        g.write(meaning+'\n')"""
+                """ else:
                     with open("english.txt","a") as h:
                         h.write(meaning+'\n')
+                """
                 count += 1
 
     print("No. of resources:", count)

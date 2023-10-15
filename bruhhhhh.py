@@ -2,7 +2,7 @@
 word_counts = {}
 
 # Open the text file
-with open('chinese.txt', 'r') as file:
+with open('all_langs.txt', 'r') as file:
     for line in file:
         words = line.split()  # Split the line into words
         for word in words:

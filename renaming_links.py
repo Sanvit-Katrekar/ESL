@@ -1,5 +1,5 @@
 # Specify the input and output file paths
-input_file_path = "chinese.txt"
+input_file_path = "chinese_unique.txt"
 output_file_path = "chinese-links.txt"
 
 # Open the input file for reading and the output file for writing
