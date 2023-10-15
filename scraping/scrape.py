@@ -13,8 +13,10 @@ def scrape_esl_page(language: Language):
     count = 0
 
     output_file = f'data/{language}-data.txt'
+
     with open(output_file, 'w') as f:
         for word in soup.find_all('a'):
+            flag=0
             word_details = word.get('data-caption')
             if word_details is None:
                 continue
@@ -24,10 +26,17 @@ def scrape_esl_page(language: Language):
                 continue
             meaning = word_details.find('h4').text.strip()
             if '-' in meaning:
+                flag=1
                 meaning = meaning.split('-')[0].rstrip()
             link = word_details.find('a').get('href')
             if meaning:
                 f.write(f"{meaning}: {link}\n")
+                if(flag):
+                    with open("chinese.txt","a") as g:
+                        g.write(meaning+'\n')
+                else:
+                    with open("english.txt","a") as h:
+                        h.write(meaning+'\n')
                 count += 1
 
     print("No. of resources:", count)
