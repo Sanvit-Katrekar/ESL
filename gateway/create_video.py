@@ -74,7 +74,8 @@ if __name__ == '__main__':
     ])'''
     # prediction = "I like to pay football at the sports union after painting"
     # prediction = "I am going hiking after swimming towards a water well carrying a knife"
-    prediction = "The Lion is swimming in the swimming pool while The oven is baking a cake."
+    #prediction = "The Lion is swimming in the swimming pool while The oven is baking a cake."
+    prediction = "The llama looked at the lion baking a cake in the oven in the swimming pool at the sports union after a painting session, and the felt like playing football"
     output = get_prediction(prediction)
     print(create_video(output))
     

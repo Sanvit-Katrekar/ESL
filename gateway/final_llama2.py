@@ -1,24 +1,26 @@
-from langchain.llms.ollama import Ollama
+from langchain.chat_models import ChatOllama
 from langchain.document_loaders import CSVLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain.chains.question_answering import load_qa_chain
 from langchain.vectorstores.chroma import Chroma
 from langchain.embeddings import GPT4AllEmbeddings
-from langchain import hub
+from langchain.prompts import PromptTemplate
 import warnings
+import json
 
 from langchain.callbacks import get_openai_callback
 
 warnings.filterwarnings('ignore')
 
 def get_prediction(question: str) -> list[dict]:
-    PROMPT = """
-    <s>[INST]
+    TEMPLATE = """
+    [INST]
     <<SYS>>
+    
     You are a sign language translator assistant.
     You will be given context of a CSV file, where in 'phrase' and 'video link to the respective phrase' are attributes.
 
-    Your vocabulary is STRICTLY RESTRICTDED to the phrases provided in:
+    Your vocabulary is STRICTLY RESTRICTDED to the phrases provided, use the following pieces of context to translate the question at the end. 
+    If you don't know the answer, just say that you don't know, don't try to make up an answer.
 
     {context}
 
@@ -33,18 +35,19 @@ def get_prediction(question: str) -> list[dict]:
     8. Links provided for the phrases should be valid links taken directly from the context provided.
 
     Just return the final output in the following format, assuming there are 'n' phrases:
-    [{{
-        "phrase": "Closest matching phrase for phrase 1 provided in context accuratelt",
-        "link": "Exact link for phrase 1 provided in context accurately"
+    [
+    {{
+    "phrase": "Closest matching phrase for phrase 1 provided in context accuratelt",
+    "link": "Exact link for phrase 1 provided in context accurately"
     }},
     {{
-        "phrase": "Closest matching phrase for phrase 2",
-        "link": "Exact link for phrase 2 provided in context"
+    "phrase": "Closest matching phrase for phrase 2",
+    "link": "Exact link for phrase 2 provided in context"
     }},
     ...,
     {{
-        "phrase": "Closest matching phrase for phrase n",
-        "link": "Exact link for the phrase n context"
+    "phrase": "Closest matching phrase for phrase n",
+    "link": "Exact link for the phrase n context"
     }}
     ]
 
@@ -58,16 +61,15 @@ def get_prediction(question: str) -> list[dict]:
 
     <</SYS>>
     Sentence to translate: {question}
-    Answer: 
-    [/INST]"""
+    Answer: [/INST]"""
 
-
-    model = Ollama(
-        model="llama2",
-        num_gpu=10,
+    model = ChatOllama(
+        model="llama2:7b-chat",
+        num_gpu=1,
         temperature=0.2,
         top_k=10,
-        top_p=0.5
+        top_p=0.5,
+        verbose=True
     )
 
     loader = CSVLoader(
@@ -84,13 +86,16 @@ def get_prediction(question: str) -> list[dict]:
     text_splitter = RecursiveCharacterTextSplitter(chunk_size = 500, chunk_overlap = 0)
     all_splits = text_splitter.split_documents(data)
 
-    vectorstore = Chroma.from_documents(documents=all_splits, embedding=GPT4AllEmbeddings())
-
+    print("CSV ready to be embedded..")
+    vectorstore = Chroma.from_documents(documents=data, embedding=GPT4AllEmbeddings())
+    print("Embedding complete..")
     #question = "I love to swim in the swimming pool after painting"
     #question = 'I love to paint before swimming'
     #question = 'I love to play football at the sports union before painting'
     #question = 'The knife is playing basketball'
     docs = vectorstore.similarity_search(question)
+    print("No. of docs:", docs)
+    '''
 
     rag_prompt_llama = hub.pull("rlm/rag-prompt-llama")
     rag_prompt_llama.messages[0].prompt.template = PROMPT
@@ -98,12 +103,25 @@ def get_prediction(question: str) -> list[dict]:
     chain = load_qa_chain(model, chain_type="stuff", prompt=rag_prompt_llama)
 
     with get_openai_callback() as cb:
-        result = chain({"input_documents": docs, "question": question}, return_only_outputs=True)
+        result = chain({"input_documents": docs, "question": question}, return_only_outputs=False)
         print("Tokens used:", cb)
+    '''
 
+    QA_CHAIN_PROMPT = PromptTemplate(
+        input_variables=["context", "question"],
+        template=TEMPLATE,
+    )
+
+    from langchain.chains import RetrievalQA
+    qa_chain = RetrievalQA.from_chain_type(
+        model,
+        retriever=vectorstore.as_retriever(),
+        chain_type_kwargs={"prompt": QA_CHAIN_PROMPT},
+    )
+    result = qa_chain({"query": question})
     print('\n\n')
 
-    output_str: str = result['output_text']
+    output_str: str = result['result']
     print(output_str)
     try:
         start_index = output_str.index('{')
@@ -117,5 +135,6 @@ def get_prediction(question: str) -> list[dict]:
     return output
 
 if __name__ == '__main__':
-    output = get_prediction("Hello, I am Bhavya")
-    print(output)
+    output = get_prediction("I love to play football at the sports union before painting")
+    print("Final Output:")
+    print(json.dumps(output, indent=4))

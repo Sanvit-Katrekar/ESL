@@ -3,7 +3,7 @@ from langchain.document_loaders import TextLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.chains.question_answering import load_qa_chain
 from langchain.vectorstores.chroma import Chroma
-from langchain.embeddings import GPT4AllEmbeddings
+from langchain.embeddings import OllamaEmbeddings
 from langchain import hub
 import warnings
 
@@ -35,19 +35,11 @@ def get_prediction(question: str) -> list[dict]:
     8. Links provided for the phrases should be valid links taken directly from the context provided.
 
     Just return the final output in the following format, assuming there are 'n' phrases:
-    [{{
-        "phrase": "Closest matching phrase for phrase 1 provided in context accuratelt",
-        "link": "Exact link for phrase 1 provided in context accurately"
-    }},
-    {{
-        "phrase": "Closest matching phrase for phrase 2",
-        "link": "Exact link for phrase 2 provided in context"
-    }},
-    ...,
-    {{
-        "phrase": "Closest matching phrase for phrase n",
-        "link": "Exact link for the phrase n context"
-    }}
+    [
+        {{"phrase": "Closest matching phrase for phrase 1 provided in context accurately", "link": "Exact link for phrase 1 provided in context accurately"}},
+        {{"phrase": "Closest matching phrase for phrase 2 provided in context accurately", "link": "Exact link for phrase 2 provided in context accurately"}},
+        ...,
+        {{"phrase": "Closest matching phrase for phrase n provided in context accurately", "link": "Exact link for the phrase n provided in context accurately"}}
     ]
 
     wherein phrase 1, second phrase 2, phrase 3, ..., phrase n, are all phrases present in the vocabulary provided to assistant.
@@ -66,8 +58,8 @@ def get_prediction(question: str) -> list[dict]:
 
     model = Ollama(
         model="llama2",
-        num_gpu=10,
-        temperature=0.2,
+        num_gpu=8,
+        temperature=0.6,
         top_k=10,
         top_p=0.5
     )
@@ -78,7 +70,7 @@ def get_prediction(question: str) -> list[dict]:
     text_splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=0)
     all_splits = text_splitter.split_documents(data)
 
-    vectorstore = Chroma.from_documents(documents=all_splits, embedding=GPT4AllEmbeddings())
+    vectorstore = Chroma.from_documents(documents=all_splits, embedding=OllamaEmbeddings())
 
     #question = "I love to swim in the swimming pool after painting"
     #question = 'I love to paint before swimming'
