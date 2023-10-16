@@ -1,5 +1,5 @@
 from langchain.llms.ollama import Ollama
-from langchain.document_loaders import TextLoader
+from langchain.document_loaders import CSVLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.chains.question_answering import load_qa_chain
 from langchain.vectorstores.chroma import Chroma
@@ -7,22 +7,20 @@ from langchain.embeddings import GPT4AllEmbeddings
 from langchain import hub
 import warnings
 
+from langchain.callbacks import get_openai_callback
+
 warnings.filterwarnings('ignore')
 
 def get_prediction(question: str) -> list[dict]:
     PROMPT = """
-    [INST]
+    <s>[INST]
     <<SYS>>
     You are a sign language translator assistant.
-    You will be given context of phrases mapped to a video link, of the format:
+    You will be given context of a CSV file, where in 'phrase' and 'video link to the respective phrase' are attributes.
 
-    "First Phrase: First phrase video link" i.e., the context contains phrase and link delimited by a ':'
-
-    Your vocabulary is strictly restricted to the phrases provided in:
+    Your vocabulary is STRICTLY RESTRICTDED to the phrases provided in:
 
     {context}
-
-    The above phrases are also presented in the document, used for question answering.
 
     Strictly follow the 7 rules provided below::
     1. Assistant translates for a language restricted to the vocabulary provided above.
@@ -58,7 +56,7 @@ def get_prediction(question: str) -> list[dict]:
 
     Try splitting the sentence to achieve maximum number of phrases.
 
-    <<SYS>>
+    <</SYS>>
     Sentence to translate: {question}
     Answer: 
     [/INST]"""
@@ -72,10 +70,18 @@ def get_prediction(question: str) -> list[dict]:
         top_p=0.5
     )
 
-    loader = TextLoader("data/en-data.txt")
+    loader = CSVLoader(
+        file_path="data/en-data.csv",
+        csv_args={
+            "delimiter": ",",
+            "quotechar": '"',
+            "fieldnames": ["phrase", "link"]
+        },
+        source_column="link"
+    )
     data = loader.load()
 
-    text_splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=0)
+    text_splitter = RecursiveCharacterTextSplitter(chunk_size = 500, chunk_overlap = 0)
     all_splits = text_splitter.split_documents(data)
 
     vectorstore = Chroma.from_documents(documents=all_splits, embedding=GPT4AllEmbeddings())
@@ -91,7 +97,9 @@ def get_prediction(question: str) -> list[dict]:
 
     chain = load_qa_chain(model, chain_type="stuff", prompt=rag_prompt_llama)
 
-    result = chain({"input_documents": docs, "question": question}, return_only_outputs=True)
+    with get_openai_callback() as cb:
+        result = chain({"input_documents": docs, "question": question}, return_only_outputs=True)
+        print("Tokens used:", cb)
 
     print('\n\n')
 
@@ -109,7 +117,5 @@ def get_prediction(question: str) -> list[dict]:
     return output
 
 if __name__ == '__main__':
-    # prediction = "The Lion is swimming in the swimming pool while The oven is baking a cake."
-    prediction = "Hello, I am Bhavya"
-    output = get_prediction(prediction)
+    output = get_prediction("Hello, I am Bhavya")
     print(output)
