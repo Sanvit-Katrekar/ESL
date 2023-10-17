@@ -1,3 +1,4 @@
+'''
 import os
 import openai
 from azure.identity import DefaultAzureCredential
@@ -34,3 +35,4 @@ response = openai.Completion.create(
 # Extract and print the generated text
 generated_text = response.choices[0].text
 print("Generated Text: ", generated_text)
+'''

@@ -6,7 +6,7 @@ from urllib.error import HTTPError
 
 import shutil
 import ssl
-from .final_llama2 import get_prediction
+from final_llama2 import get_prediction
 from uuid import uuid4
 
 try:
@@ -32,6 +32,7 @@ def create_video(video_details: list[dict], video_name=f'{str(uuid4())}.mp4'):
            continue
         '''
         clip = VideoFileClip(video['path']).set_start(start)
+        clip = clip.fx( vfx.resize, width = 280) 
         start += clip.duration
         clips.append(clip)
     shutil.rmtree(TEMP_FOLDER)
@@ -80,7 +81,27 @@ if __name__ == '__main__':
     # prediction = "I am going hiking after swimming towards a water well carrying a knife"
     #prediction = "The Lion is swimming in the swimming pool while The oven is baking a cake."
     #prediction = "The llama looked at the lion baking a cake in the oven in the swimming pool at the sports union after a painting session"
-    prediction = "The American Army is Angry"
-    output = get_prediction(prediction)
+    #prediction = "I am going hiking after swimming towards a well carrying a knife"
+    #output = get_prediction(prediction)
+    #print(create_video(output))
+
+    output = [
+    {
+        "phrase": "Swimming",
+        "path": "data/videos/Swimming.mp4"
+    },
+    {
+        "phrase": "Well",
+        "path": "data/videos/Well.mp4"
+    },
+    {
+        "phrase": "Carrying",
+        "path": "data/videos/Carrying.mp4"
+    },
+    {
+        "phrase": "Knife",
+        "path": "data/videos/Knife.mp4"
+    }
+    ]
     print(create_video(output))
     
