@@ -3,8 +3,10 @@ from moviepy.editor import VideoFileClip
 # Open the text file containing video links
 with open('english-links.txt', 'r') as file:
     for i, line in enumerate(file):
-        if i>1300:
-           
+        if i==1317:
+           continue
+        if i>1281:
+            
             # Read video link and remove leading/trailing whitespace
             video_link = line.strip()
 
@@ -27,7 +29,7 @@ with open('english-links.txt', 'r') as file:
             # Trim the video to the first 4 seconds
             #trimmed_video = resized_video.subclip(0, 4)
             # Save the resized video with the original filename
-            resized_video.write_videofile(f'data/youtube-videos/{video_link}', codec='libx264')
+            resized_video.write_videofile(f'data/cropped-youtube-videos/{video_link}', codec='libx264')
 
             # Close the video objects
             video.close()
