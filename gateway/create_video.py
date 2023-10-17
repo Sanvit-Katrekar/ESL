@@ -6,7 +6,7 @@ from urllib.error import HTTPError
 
 import shutil
 import ssl
-from final_llama2 import get_prediction
+from .final_llama2 import get_prediction
 from uuid import uuid4
 
 try:
