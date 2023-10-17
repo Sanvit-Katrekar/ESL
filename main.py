@@ -2,7 +2,7 @@ from fastapi import FastAPI
 
 from constants import *
 import uvicorn
-from usecase.en_to_esl import convert_english_to_esl
+from usecase.en_to_esl import get_prediction, create_video
 from entity.response_model import Response
 from entity.request_model import VideoCreateRequest
 
@@ -32,10 +32,15 @@ async def test() -> dict:
 @app.post("/predict", response_model=Response, tags=["predict"])
 async def english_to_esl(video_details: VideoCreateRequest) -> Response:
     print("Waiting for response:", video_details.english_sentence)
+    '''
     video_path = convert_english_to_esl(video_details.english_sentence)
     response = Response(video_path=video_path)
     print("Got response!")
-    return response
+    return response'''
+
+    prediction = "The American Army is Angry"
+    output = get_prediction(prediction)
+    print(create_video(output))
 
 if __name__ == "__main__":
    uvicorn.run("main:app", host=HOST, port=PORT, reload=True)
