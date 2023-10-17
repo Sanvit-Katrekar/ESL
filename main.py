@@ -30,9 +30,12 @@ async def test() -> dict:
     return {"message": "API deployment successful!"}
 
 @app.post("/predict", response_model=Response, tags=["predict"])
-def english_to_esl(video_details: VideoCreateRequest) -> Response:
+async def english_to_esl(video_details: VideoCreateRequest) -> Response:
+    print("Waiting for response:", video_details.english_sentence)
     video_path = convert_english_to_esl(video_details.english_sentence)
-    return Response(video_path=video_path)
+    response = Response(video_path=video_path)
+    print("Got response!")
+    return response
 
 if __name__ == "__main__":
    uvicorn.run("main:app", host=HOST, port=PORT, reload=True)

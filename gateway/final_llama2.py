@@ -17,14 +17,14 @@ def get_prediction(question: str) -> list[dict]:
     <<SYS>>
     
     You are a sign language translator assistant.
-    You will be given context of a CSV file, where in 'phrase' and 'video link to the respective phrase' are attributes.
+    You will be given context of a CSV file, where in 'phrase' and 'video path to the respective phrase' are attributes.
 
     Your vocabulary is STRICTLY RESTRICTDED to the phrases provided, use the following pieces of context to translate the question at the end. 
     If you don't know the answer, just say that you don't know, don't try to make up an answer.
 
     {context}
 
-    Strictly follow the 7 rules provided below::
+    Strictly follow the 8 rules provided below::
     1. Assistant translates for a language restricted to the vocabulary provided above.
     2. Assistant translates for a language without prepositions and grammatical phrases.
     3. Make meaningful translations.
@@ -32,22 +32,22 @@ def get_prediction(question: str) -> list[dict]:
     5. No prepositions or grammatical phrases in the translation, the sentence is simplified to just the main phrases.
     6. In case the phrase does not exist in the vocabulary, replace with individual letters.
     7. Omit all unnecessary words/phrases not having any effect on the semantic meaning of the sentence.
-    8. Links provided for the phrases should be valid links taken directly from the context provided.
+    8. Paths provided for the phrases should be valid paths taken directly from the context provided.
 
     Just return the final output in the following format, assuming there are 'n' phrases:
     [
     {{
-    "phrase": "Closest matching phrase for phrase 1 provided in context accuratelt",
-    "link": "Exact link for phrase 1 provided in context accurately"
+    "phrase": "Closest matching phrase for phrase 1 provided in context",
+    "path": "path for phrase 1 provided in context"
     }},
     {{
     "phrase": "Closest matching phrase for phrase 2",
-    "link": "Exact link for phrase 2 provided in context"
+    "path": "path for phrase 2 provided in context"
     }},
     ...,
     {{
     "phrase": "Closest matching phrase for phrase n",
-    "link": "Exact link for the phrase n context"
+    "path": "path for phrase n in context"
     }}
     ]
 
@@ -69,7 +69,7 @@ def get_prediction(question: str) -> list[dict]:
         temperature=0.2,
         top_k=10,
         top_p=0.5,
-        verbose=True
+        verbose=False
     )
 
     loader = CSVLoader(
@@ -77,9 +77,9 @@ def get_prediction(question: str) -> list[dict]:
         csv_args={
             "delimiter": ",",
             "quotechar": '"',
-            "fieldnames": ["phrase", "link"]
+            "fieldnames": ["phrase", "path"]
         },
-        source_column="link"
+        source_column="phrase"
     )
     data = loader.load()
 
@@ -94,7 +94,9 @@ def get_prediction(question: str) -> list[dict]:
     #question = 'I love to play football at the sports union before painting'
     #question = 'The knife is playing basketball'
     docs = vectorstore.similarity_search(question)
-    print("No. of docs:", docs)
+    print("Similar documents:")
+    print(docs)
+    print("Splits:", len(docs))
     '''
 
     rag_prompt_llama = hub.pull("rlm/rag-prompt-llama")
@@ -124,9 +126,9 @@ def get_prediction(question: str) -> list[dict]:
     output_str: str = result['result']
     print(output_str)
     try:
-        start_index = output_str.index('{')
+        start_index = output_str.index('[')
         end_index = output_str.index(']') + 1
-        output = eval('[' + output_str[start_index: end_index])
+        output = eval(output_str[start_index: end_index])
     except:
         start_index = output_str.index('{')
         end_index = output_str.index('}') + 1
