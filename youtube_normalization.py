@@ -1,4 +1,3 @@
-
 import os
 
 # Define the path to your folder
@@ -25,8 +24,9 @@ for filename in os.listdir(folder_path):
 
 
 '''
-for filename in os.listdir(folder_path):
+for filename in sorted(os.listdir(folder_path)):
     if filename.endswith(".mp4"):
         # Get the part before ".mp4" and store it in the 'title' variable
-        title = filename.split(".mp4")[0]
-        print(title.replace("-", " ")+f": youtube_videos/{filename}")
+        
+        #print(title.replace("-", " ")+f": youtube_videos/{filename}")
+        print(filename)
