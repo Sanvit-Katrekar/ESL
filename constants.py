@@ -3,4 +3,4 @@ HOST = 'localhost'
 PORT = 8001
 
 VIDEO_DATA_PATH = 'data/videos'
-VIDEO_OUTPUT_PATH = 'output_videos'
+VIDEO_OUTPUT_PATH = 'src/public'

@@ -2,3 +2,5 @@ __pycache__
 *.pyc
 .env
 output_videos/*.mp4
+.DS_Store
+node_modules/
