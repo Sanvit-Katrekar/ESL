@@ -6,8 +6,10 @@ from langchain.embeddings import GPT4AllEmbeddings
 from langchain.prompts import PromptTemplate
 from langchain.chains import RetrievalQA
 from constants import VIDEO_DATA_PATH
+from .get_arabic import get_arabic
 import warnings
 import json
+import csv
 
 #VIDEO_DATA_PATH = 'data/videos'
 
@@ -79,10 +81,11 @@ def get_prediction(question: str) -> list[dict]:
     then the phrase selected in the FINAL OUTPUT is "carry.mp4".
     Additionally, try including maximum verbs from the sentence in to the final output.
     For example, if the sentence is given as "The bee hits the donkey", then the phrases in the final output must include "bee", "hits" and "donkey".
-    Additionally, keep a note of the singular/plural form of a word provided in the context.
+    
+    Additionally, keep only use the singular/plural form of a word provided in the context.
     For example, if the sentence is given as "The mother hits the child", then the phrases in the final output must include "mother", "hits" and "children", since "child" does not exist in the given csv context, but "children" does exist.
 
-    DO NOT INVENT WORDS/PHRASES, stick to the csv context provided.
+    DO NOT INVENT WORDS/PHRASES, strictly use the csv context provided.
 
     Try splitting the sentence to achieve maximum number of phrases, with each phrase having maximum no. of characters.
     <</SYS>>
@@ -147,13 +150,22 @@ def get_prediction(question: str) -> list[dict]:
         start_index = output_str.index('[')
         end_index = output_str.index(']') + 1
         output = eval(output_str[start_index: end_index])
-    except:
+    except Exception:
         start_index = output_str.index('{')
         end_index = output_str.index('}') + 1
         output: list[dict] = [eval(output_str[start_index: end_index])]
         for phrase_obj in output:
             if not phrase_obj['path'].startswith(VIDEO_DATA_PATH):
                 phrase_obj['path'] = VIDEO_DATA_PATH + '/' + phrase_obj['path']
+
+    for i in range(len(output)):
+        with open('data/en-data.csv') as f:
+            file = csv.DictReader(f)
+        for row in file:
+            if row['path'] == output[i]['path']:
+                break
+        else:
+            arabic = get_arabic(output[i]['phrase'])
 
     return output
 

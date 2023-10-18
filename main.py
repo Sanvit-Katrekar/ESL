@@ -47,11 +47,11 @@ async def english_to_esl(video_details: VideoCreateRequest, background_tasks: Ba
         video_details.english_sentence,
         video_details.video_name
     )
-    video_path = f'{VIDEO_DATA_PATH}/{video_details.video_name}'
+    video_path = f'/{video_details.video_name}'
     response = Response(video_path=video_path)
     return response
 
-@app.post("/get-status", response_model=ResponseBase, tags=["status"])
+@app.get("/get-status", response_model=ResponseBase, tags=["status"])
 async def check_prediction_status(video_name: str) -> ResponseBase:
     print("Checking status of", video_name)
     status = check_status(video_name)
