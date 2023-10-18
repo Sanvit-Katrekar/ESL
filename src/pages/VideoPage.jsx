@@ -7,7 +7,7 @@ import VideoPlayer from '../components/VideoPlayer';
 const VideoPage = () => {
   const [text, setText] = useState('');
   const [loading, setLoading] = useState(false);
-  const videoSource = '/music.mp4';
+  const videoSource = '/fdc68052-764e-4b92-8792-bfef089d24fb.mp4';
 
   const handleTextChange = (e) => {
     setText(e.target.value);
