@@ -4,12 +4,17 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.vectorstores.chroma import Chroma
 from langchain.embeddings import GPT4AllEmbeddings
 from langchain.prompts import PromptTemplate
+from langchain.chains import RetrievalQA
+from constants import VIDEO_DATA_PATH
 import warnings
 import json
+
+#VIDEO_DATA_PATH = 'data/videos'
 
 warnings.filterwarnings('ignore')
 
 def get_prediction(question: str) -> list[dict]:
+    print("Started the prediction process!")
     TEMPLATE = """
     [INST]
     <<SYS>>
@@ -72,6 +77,12 @@ def get_prediction(question: str) -> list[dict]:
     **Important** NOTE that if the phrase is a verb, use the form of the verb EXACTLY AS PROVIDED IN csv context.
     For example, if a sentence uses the phrase "Carrying", but the phrase provided in the csv context is "carry",
     then the phrase selected in the FINAL OUTPUT is "carry.mp4".
+    Additionally, try including maximum verbs from the sentence in to the final output.
+    For example, if the sentence is given as "The bee hits the donkey", then the phrases in the final output must include "bee", "hits" and "donkey".
+    Additionally, keep a note of the singular/plural form of a word provided in the context.
+    For example, if the sentence is given as "The mother hits the child", then the phrases in the final output must include "mother", "hits" and "children", since "child" does not exist in the given csv context, but "children" does exist.
+
+    DO NOT INVENT WORDS/PHRASES, stick to the csv context provided.
 
     Try splitting the sentence to achieve maximum number of phrases, with each phrase having maximum no. of characters.
     <</SYS>>
@@ -88,6 +99,8 @@ def get_prediction(question: str) -> list[dict]:
         verbose=False
     )
 
+    print("Created the model object!")
+
     loader = CSVLoader(
         file_path="data/en-data.csv",
         csv_args={
@@ -97,10 +110,11 @@ def get_prediction(question: str) -> list[dict]:
         },
         source_column="phrase"
     )
+    print("Started data loading:")
     data = loader.load()
 
-    text_splitter = RecursiveCharacterTextSplitter(chunk_size = 500, chunk_overlap = 0)
-    all_splits = text_splitter.split_documents(data)
+    #text_splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=0)
+    #all_splits = text_splitter.split_documents(data)
 
     print("CSV ready to be embedded..")
     vectorstore = Chroma.from_documents(documents=data, embedding=GPT4AllEmbeddings())
@@ -119,7 +133,6 @@ def get_prediction(question: str) -> list[dict]:
         template=TEMPLATE,
     )
 
-    from langchain.chains import RetrievalQA
     qa_chain = RetrievalQA.from_chain_type(
         model,
         retriever=vectorstore.as_retriever(),
@@ -137,7 +150,10 @@ def get_prediction(question: str) -> list[dict]:
     except:
         start_index = output_str.index('{')
         end_index = output_str.index('}') + 1
-        output = [eval(output_str[start_index: end_index])]
+        output: list[dict] = [eval(output_str[start_index: end_index])]
+        for phrase_obj in output:
+            if not phrase_obj['path'].startswith(VIDEO_DATA_PATH):
+                phrase_obj['path'] = VIDEO_DATA_PATH + '/' + phrase_obj['path']
 
     return output
 
