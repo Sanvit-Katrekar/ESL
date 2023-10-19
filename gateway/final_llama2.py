@@ -6,7 +6,7 @@ from langchain.embeddings import GPT4AllEmbeddings
 from langchain.prompts import PromptTemplate
 from langchain.chains import RetrievalQA
 from constants import VIDEO_DATA_PATH
-from .get_arabic import get_arabic
+from .convert import convert
 import warnings
 import json
 import csv
@@ -158,20 +158,13 @@ def get_prediction(question: str) -> list[dict]:
             if not phrase_obj['path'].startswith(VIDEO_DATA_PATH):
                 phrase_obj['path'] = VIDEO_DATA_PATH + '/' + phrase_obj['path']
 
-    for i in range(len(output)):
-        with open('data/en-data.csv') as f:
-            file = csv.DictReader(f)
-        for row in file:
-            if row['path'] == output[i]['path']:
-                break
-        else:
-            arabic = get_arabic(output[i]['phrase'])
+    output = convert(output)
 
     return output
 
 if __name__ == '__main__':
-    #prediction = "I love to play football at the sports union before painting"
-    prediction = "I am going hiking after swimming towards a well carrying a knife"
+    #prediction = "I love to play football at the sports union before painting" /ccf7ccc4-e967-4edc-abab-c10960ef05f7.mp4
+    prediction = "I am going hiking after swimming towards a well carrying a knife" #"/6659899d-3510-49c0-84f8-a1594deb1bd0.mp4"
     #prediction = "The llama looked at the lion baking a cake in the oven in the swimming pool at the sports union after a painting session"
     output = get_prediction(prediction)
     print("Final Output:")

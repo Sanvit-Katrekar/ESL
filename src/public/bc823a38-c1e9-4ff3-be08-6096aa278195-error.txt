@@ -1,2 +1,0 @@
-MoviePy error: the file data/videos/carrying.mp4 could not be found!
-Please check that you entered the correct path.
