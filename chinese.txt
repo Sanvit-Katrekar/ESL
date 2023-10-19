@@ -1,0 +1,91 @@
+Knife
+Friday
+Minute
+Saturday
+Sunrise
+Thursday
+Yesterday
+Tuesday
+A Week
+Hour
+Monday
+Sunday
+Sunset
+Today
+Wednesday
+A Quarter Hour
+Son
+Daughter
+Grandfather
+Mother
+Father
+Wife
+Pillow
+Grandmother
+Table
+Television
+Mirror
+Refrigerator
+Table Lamp
+Wardrobe
+Bed
+Carpet
+Garage
+Bedroom
+Chair
+Pilot
+Journalist
+Lawyer
+Chef
+Mathematics
+Glass
+Lightning
+Rain
+Thunder
+Cold
+Farm
+Gold
+Night
+Sunny
+City
+Day
+Ministry Of Defense
+The Ministry Of Education
+Ministry Of Foreign Affairs
+Sour
+Bitter
+Smell
+Sweet
+Cold/Influenza
+Fever
+Doctor
+Internal Medicine
+Pharmacy
+Cough
+Virus
+Ear Nose Throat Doctor
+General Doctor
+Pediatrician
+Specialist Doctor
+Xray
+Dentist
+Playground
+Skating
+Swimming
+Football
+Drink
+Washroom
+Shower
+Sleep
+Get up
+Classroom
+Brown color
+Light Colors
+Pink
+Black
+Dark Colors
+Orange
+Comb Hair
+Yellow
+Makeup
+Second Wife

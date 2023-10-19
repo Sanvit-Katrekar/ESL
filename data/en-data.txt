@@ -91,8 +91,8 @@ Makeup: https://player.vimeo.com/external/515652544.sd.mp4?s=3d659b2cf284bb643e9
 Amma: https://player.vimeo.com/external/267533589.sd.mp4?s=51341b952dc3da80ba5248a8567c5c42474ac4cf&profile%20id=164&download=1
 Second Wife: https://player.vimeo.com/external/267534072.sd.mp4?s=9c02ba25c79e510ef8eb6446cc6b2b35c66aa6f2&profile%20id=164&download=1
 Second Wife: https://player.vimeo.com/external/267534401.sd.mp4?s=994a835a6b4af2b5e05885a6ec60a8105dbebeb8&profile%20id=164&download=1
-Nephew: https://player.vimeo.com/external/267531851.sd.mp4?s=e0cfdd64871cc610a873c75e35d0faff91050c8e&profile%20id=164&download=1
-Nephew: https://player.vimeo.com/external/267531478.sd.mp4?s=02d55811af258b4d4dfa279492517074defa3e7e&profile%20id=164&download=1
+Naphew: https://player.vimeo.com/external/267531851.sd.mp4?s=e0cfdd64871cc610a873c75e35d0faff91050c8e&profile%20id=164&download=1
+Naphew: https://player.vimeo.com/external/267531478.sd.mp4?s=02d55811af258b4d4dfa279492517074defa3e7e&profile%20id=164&download=1
 Mother: https://player.vimeo.com/external/267534563.sd.mp4?s=0e04e98aabd11e5e10ef9db42a89029061590813&profile%20id=164&download=1
 Lactation Brother: https://player.vimeo.com/external/267532953.sd.mp4?s=e3f7a4f84275cf789e2ee975737c576b588a9358&profile%20id=164&download=1
 Grandmother: https://player.vimeo.com/external/267535145.sd.mp4?s=43f70c383e3c0f2091c5fa7d66da48732f3798ab&profile%20id=164&download=1
@@ -123,7 +123,7 @@ Storage: https://player.vimeo.com/external/267449389.sd.mp4?s=29820b43f62460c38e
 Spoon: https://player.vimeo.com/external/267539208.sd.mp4?s=18916f662f88f62ca4721e0edbbe5ee3f651429a&profile%20id=164&download=1
 Safe: https://player.vimeo.com/external/267446817.sd.mp4?s=94d3700234fa8ebae427b4286d1f68517ff6cd1a&profile%20id=164&download=1
 Room: https://player.vimeo.com/external/267534796.sd.mp4?s=e02fffbd544537bc48709e3903df9db1c62b53b9&profile%20id=164&download=1
-Water Well: https://player.vimeo.com/external/267446021.sd.mp4?s=7c6567eeda26459ad79c441193ef65cbc9f116ea&profile%20id=164&download=1
+Ø¨Ø¦Ø±: https://player.vimeo.com/external/267446021.sd.mp4?s=7c6567eeda26459ad79c441193ef65cbc9f116ea&profile%20id=164&download=1
 Bathroom: https://player.vimeo.com/external/267533089.sd.mp4?s=c471b71f0d84352d4ce9372284a0d46566e64196&profile%20id=164&download=1
 Recommended: https://player.vimeo.com/external/267528464.sd.mp4?s=8c5d962a954df887e6a96abf0b1271e20d1d7888&profile_id=164&download=1
 Relax: https://player.vimeo.com/external/267523168.sd.mp4?s=729f2e910b9d4884a7d5519078177ac1000c4b89&profile_id=164&download=1
@@ -399,8 +399,8 @@ Eight: https://player.vimeo.com/external/267634759.sd.mp4?s=e809606c9b5a5aeb5009
 1000000: https://player.vimeo.com/external/267777379.hd.mp4?s=118d66764b53482a51c35898faadeecb339454f3&profile_id=175&oauth2_token_id=1059107423&download=1
 1000000: https://player.vimeo.com/external/268226974.hd.mp4?s=5f9271377a17e397d2dffbeb2d62bc97a285358f&profile_id=174&oauth2_token_id=1059107423&download=1
 1000000000: https://player.vimeo.com/external/267777608.hd.mp4?s=1fc5fe317c9c6bf09946c04f868715bc00fc2a76&profile_id=175&oauth2_token_id=1059107423&download=1
-1000000: https://player.vimeo.com/external/268226992.hd.mp4?s=c8389a8c930f7785882bf164f8eed0eb5837c7f3&profile_id=174&oauth2_token_id=1059107423&download=1
-1000: https://player.vimeo.com/external/267771597.hd.mp4?s=84b7b608247b39871979b5a7571b27ece1a043d4&profile_id=174&oauth2_token_id=1059107423&download=1
+1000000 1: https://player.vimeo.com/external/268226992.hd.mp4?s=c8389a8c930f7785882bf164f8eed0eb5837c7f3&profile_id=174&oauth2_token_id=1059107423&download=1
+1000 02: https://player.vimeo.com/external/267771597.hd.mp4?s=84b7b608247b39871979b5a7571b27ece1a043d4&profile_id=174&oauth2_token_id=1059107423&download=1
 19: https://player.vimeo.com/external/267779768.sd.mp4?s=d9e69fb4a995b0acdc39b0e05df9bf18dd322aaa&profile_id=165&oauth2_token_id=1059107423&download=1
 19: https://player.vimeo.com/external/267641521.hd.mp4?s=2d04f15892778144df55c2348bc7773ab12ae1d0&profile_id=175&oauth2_token_id=1059107423&download=1
 200000: https://player.vimeo.com/external/267775373.sd.mp4?s=77522202948a41084210a21803512737b5e04f86&profile_id=165&oauth2_token_id=1059107423&download=1
@@ -427,23 +427,23 @@ Certificate Of Study: https://player.vimeo.com/external/267534086.sd.mp4?s=b305a
 College Degree: https://player.vimeo.com/external/267533676.sd.mp4?s=e0bee7a43b8edc7333795ec74979db4886bc43e2&profile_id=164&download=1
 Salary Certificate: https://player.vimeo.com/external/267534445.sd.mp4?s=6d5c14a08bdb1e710b3cee9100e1c0e0afdac6cd&profile_id=164&download=1
 Birth Certificate: https://player.vimeo.com/external/267533525.sd.mp4?s=bf8a93994b1ed241c8251f3888b6682a230817be&profile_id=164&download=1
-Absher Card: https://player.vimeo.com/external/267525000.sd.mp4?s=0e1a4a4a1a98946fce9e2c7a3a3b08b32e2c854d&profile_id=164&download=1
-Disabled Card: https://player.vimeo.com/external/267526505.sd.mp4?s=f8b91598bb59b1e747ee8496e639458162b3aaad&profile_id=164&download=1
+Absher Card 02: https://player.vimeo.com/external/267525000.sd.mp4?s=0e1a4a4a1a98946fce9e2c7a3a3b08b32e2c854d&profile_id=164&download=1
+Disabled Card 02: https://player.vimeo.com/external/267526505.sd.mp4?s=f8b91598bb59b1e747ee8496e639458162b3aaad&profile_id=164&download=1
 House Ownership: https://player.vimeo.com/external/267536264.sd.mp4?s=d284aa2d645c25af9de5a23f563c1d45bc842e24&profile_id=164&download=1
 Disabled Card: https://player.vimeo.com/external/267526219.sd.mp4?s=f2cfe952165381160d5fee3624bc41c1ed5f8862&profile_id=164&download=1
 Housing Loan: https://player.vimeo.com/external/267535771.sd.mp4?s=07445cdda33c44d0141695bc5643b77bf05aaf7f&profile_id=164&download=1
 Insurance Card: https://player.vimeo.com/external/267530314.sd.mp4?s=6614c6819905930c3f67c3ce517f076947cebec1&profile_id=164&download=1
 Land Ownership: https://player.vimeo.com/external/267536006.sd.mp4?s=2b39a85a4de379cd4cb65e9945acde15c10a068e&profile_id=164&download=1
 Medical Certificate: https://player.vimeo.com/external/267533261.sd.mp4?s=0e4cd67a7156a94f99f6183778e994785400e18b&profile_id=164&download=1
-Absher Card: https://player.vimeo.com/external/267524801.sd.mp4?s=078a5da5e07e1e5d0d60a32f464a244a5904b939&profile_id=164&download=1
+Absher Card 01: https://player.vimeo.com/external/267524801.sd.mp4?s=078a5da5e07e1e5d0d60a32f464a244a5904b939&profile_id=164&download=1
 Citizenship Paper: https://player.vimeo.com/external/267531708.sd.mp4?s=33da7fa0d72c5009c32c936cd411478271b35070&profile_id=164&download=1
 Citizenship Paper: https://player.vimeo.com/external/267532050.sd.mp4?s=9757c0780f8ba82163b914ab6252ba4e4481569e&profile_id=164&download=1
 Citizenship Paper: https://player.vimeo.com/external/267532324.sd.mp4?s=50d6430f1341d886c92ab75afaa163c3485550d6&profile_id=164&download=1
 City Number In Citizenship: https://player.vimeo.com/external/267532971.sd.mp4?s=2e5fa0fc128f31c007a017dfb3d53adc70433e2b&profile_id=164&download=1
 Clearance: https://player.vimeo.com/external/267524550.sd.mp4?s=c7a18860b063d807c6ca914a7ab4353a964dfde3&profile_id=164&download=1
 Certificate Of Good Conduct: https://player.vimeo.com/external/267533856.sd.mp4?s=490f84ba512d741b796a55d337a17470a54ec00f&profile_id=164&download=1
-Owners Card: https://player.vimeo.com/external/267536451.sd.mp4?s=14def02c2e7f64cb0d597084b5a4c2f5535d26f5&profile_id=164&download=1
-Owners Card: https://player.vimeo.com/external/267536649.sd.mp4?s=86ad9ad0280442338e092ea3e2e84dd9406fecf9&profile_id=164&download=1
+Owners Card 01: https://player.vimeo.com/external/267536451.sd.mp4?s=14def02c2e7f64cb0d597084b5a4c2f5535d26f5&profile_id=164&download=1
+Owners Card 02: https://player.vimeo.com/external/267536649.sd.mp4?s=86ad9ad0280442338e092ea3e2e84dd9406fecf9&profile_id=164&download=1
 Photograph: https://player.vimeo.com/external/267542518.sd.mp4?s=843eac7631de78d4c4cb6488ea97b98a5406d3e2&profile_id=164&download=1
 Power Of Attorney: https://player.vimeo.com/external/267531364.sd.mp4?s=ef688b7c96a6c0f164d66daf2666ed984fd8af45&profile_id=164&download=1
 Ration Card: https://player.vimeo.com/external/267525273.sd.mp4?s=5c114cf607da0fb1f7ea9276f251aa181f6c71c1&profile_id=164&download=1
@@ -451,7 +451,7 @@ Membership Card: https://player.vimeo.com/external/267525966.sd.mp4?s=a19cbbb027
 Car Ownership Card: https://player.vimeo.com/external/267526737.sd.mp4?s=4fcda2ea8126a304c83d12243819d226b2ff44ff&profile_id=164&download=1
 Divorce Certificate: https://player.vimeo.com/external/267534636.sd.mp4?s=022ed85d6ad9e09d2cada31802810662d10081cd&profile_id=164&download=1
 Driving License: https://player.vimeo.com/external/267532683.sd.mp4?s=65f7ba29bf739d0b0a1f34328118489cb20bf372&profile_id=164&download=1
-Emirates Id Card: https://player.vimeo.com/external/267529866.sd.mp4?s=eb5318063d9aa8f0b4043b53379dbc3284ae6412&profile_id=164&download=1
+Emirates Id Card 02: https://player.vimeo.com/external/267529866.sd.mp4?s=eb5318063d9aa8f0b4043b53379dbc3284ae6412&profile_id=164&download=1
 Emirates Id Card: https://player.vimeo.com/external/267527197.sd.mp4?s=24dae36b2d493e6813948085fa07b5614d2397db&profile_id=164&download=1
 Insurance Against Others: https://player.vimeo.com/external/267531019.sd.mp4?s=6a1340778a4c9723218e5804d79bb0da34236802&profile_id=164&download=1
 Health Card: https://player.vimeo.com/external/267525605.sd.mp4?s=61f10ff6d647fa9792b6d33b6a5396abd0c2b957&profile_id=164&download=1
@@ -473,12 +473,12 @@ Lt General: https://player.vimeo.com/external/267646031.sd.mp4?s=a8add828154eed4
 Lieutenant: https://player.vimeo.com/external/267768813.sd.mp4?s=48e677c2605e292e9982c5ac052d4fe593751c63&profile%20id=164&download=1
 Lieutenant Colonel: https://player.vimeo.com/external/267768460.sd.mp4?s=10900e4d9d76a63a2e54ba2b8d6c73048bce5ab4&profile%20id=164&download=1
 Lawyer: https://player.vimeo.com/external/267766272.sd.mp4?s=64c2539b2b6af4d2c4c0eef9a83493949bf2d28b&profile%20id=164&download=1
-Lieutenant: https://player.vimeo.com/external/267768901.sd.mp4?s=6fe856905537983b01f8765ca4cc988f20f17c76&profile%20id=164&download=1
+Lieutenant 2: https://player.vimeo.com/external/267768901.sd.mp4?s=6fe856905537983b01f8765ca4cc988f20f17c76&profile%20id=164&download=1
 Labor: https://player.vimeo.com/external/267644924.sd.mp4?s=7138edcb2d9ca2be81326556f773b23f8a11f879&profile%20id=164&download=1
 Porter: https://player.vimeo.com/external/267632859.sd.mp4?s=21301e0f47d12ece8dd22cf309e9a368aeb7fb4f&profile%20id=164&download=1
 Programmer: https://player.vimeo.com/external/267765657.sd.mp4?s=295112dc095b8c9f9632820bad382a7f89372d9d&profile%20id=164&download=1
 Psychologist: https://player.vimeo.com/external/267629667.sd.mp4?s=a2090ecfe9a9c224695b3d8e67846afe0d0fe1a7&profile%20id=164&download=1
-Wakeel: https://player.vimeo.com/external/267770490.sd.mp4?s=920e24876cdc77f72e4cb6af6dd4a9965cca8988&profile%20id=164&download=1
+Wakeel 1: https://player.vimeo.com/external/267770490.sd.mp4?s=920e24876cdc77f72e4cb6af6dd4a9965cca8988&profile%20id=164&download=1
 Wakeel: https://player.vimeo.com/external/267770382.sd.mp4?s=a6b09418ec971e94ecae801b5f2cc4c904217b14&profile%20id=164&download=1
 Waiter: https://player.vimeo.com/external/267768575.sd.mp4?s=65f1c5f1c30f9e1d27776f4dad5e990e716d4acd&profile%20id=164&download=1
 Telephone operator: https://player.vimeo.com/external/267769302.sd.mp4?s=ef7c9767dfd65041e92cdda35f19774a0245344f&profile%20id=164&download=1
@@ -560,12 +560,12 @@ Astronaut: https://player.vimeo.com/external/267635328.sd.mp4?s=02149023f80f9758
 Crescent: https://player.vimeo.com/external/267750264.sd.mp4?s=e9ac4a56173f0a105811a9d74c36b3d0d41e41ff&profile_id=164&download=1
 Astronaut: https://player.vimeo.com/external/267635093.sd.mp4?s=181b1bf6b97278809e94968353a0185ddf5642a0&profile%20id=164&download=1
 Globe: https://player.vimeo.com/external/267747544.sd.mp4?s=e2370bf823ed1e56ca6aa63d06309bd31d70d0d5&profile_id=164&download=1
-Assistant Teacher: https://player.vimeo.com/external/267767290.sd.mp4?s=caa3383db58a47f9bd23cedf0f3c971e9e5007da&profile%20id=164&download=1
+Asst Teacher: https://player.vimeo.com/external/267767290.sd.mp4?s=caa3383db58a47f9bd23cedf0f3c971e9e5007da&profile%20id=164&download=1
 Gravity: https://player.vimeo.com/external/267740940.sd.mp4?s=cd17e0b5cea56d8804eab53c75c6502950efc734&profile_id=164&download=1
 Assistant: https://player.vimeo.com/external/267767543.sd.mp4?s=bdaac7bd2fbecfeda7f3d16f2ef69685099b624d&profile%20id=164&download=1
 Iron: https://player.vimeo.com/external/267741651.sd.mp4?s=61d22752d078c94e9ea9e1a94bba4593bcadb475&profile_id=164&download=1
 Ambassador: https://player.vimeo.com/external/267638012.sd.mp4?s=ebe2b15d05560f51577e274ff3c4146dd4f90cc3&profile%20id=164&download=1
-Island: https://player.vimeo.com/external/267741380.sd.mp4?s=eae3b481eb9f6eae1fcc3fc861fe7d3206477d46&profile_id=164&download=1
+Island 02: https://player.vimeo.com/external/267741380.sd.mp4?s=eae3b481eb9f6eae1fcc3fc861fe7d3206477d46&profile_id=164&download=1
 Air host: https://player.vimeo.com/external/267768211.sd.mp4?s=b6d2464505b579148178f39f1f5c83e484d16201&profile%20id=164&download=1
 Latitude: https://player.vimeo.com/external/267743381.sd.mp4?s=374d5c334b494ac80253e93dae89b02efa889c0e&profile_id=164&download=1
 Lightning: https://player.vimeo.com/external/267740014.sd.mp4?s=b9387997d51b7c9ba00403c507c2c3460db985a3&profile_id=164&download=1
@@ -586,8 +586,8 @@ Imam: https://player.vimeo.com/external/267630033.sd.mp4?s=15cec77ab6815424a7a32
 Fog: https://player.vimeo.com/external/267745613.sd.mp4?s=a025f20e1ee0752ac5b0a7226498d8708e4174d7&profile_id=164&download=1
 Glass: https://player.vimeo.com/external/267744409.sd.mp4?s=17f58060c12bcf591c15ee2755a4303df899f388&profile_id=164&download=1
 Jungle: https://player.vimeo.com/external/267746134.sd.mp4?s=f2f546185acb0f62d6a4107bfb66e382818d4b9f&profile_id=164&download=1
-Khaleej: https://player.vimeo.com/external/267743057.sd.mp4?s=76a36222c1b7392300e041cf915fafd4d9af89a9&profile_id=164&download=1
-Khaleej: https://player.vimeo.com/external/267743225.sd.mp4?s=b4f524f59f2ee7d4dc985ad427b1d298eb6cdc7f&profile_id=164&download=1
+Khaleej 01: https://player.vimeo.com/external/267743057.sd.mp4?s=76a36222c1b7392300e041cf915fafd4d9af89a9&profile_id=164&download=1
+Khaleej 02: https://player.vimeo.com/external/267743225.sd.mp4?s=b4f524f59f2ee7d4dc985ad427b1d298eb6cdc7f&profile_id=164&download=1
 Lunar Eclipse: https://player.vimeo.com/external/267742079.sd.mp4?s=1c8f6089a34785fafd4afa1acaa054ca3f50eb92&profile_id=164&download=1
 Lake: https://player.vimeo.com/external/267739595.sd.mp4?s=744dfe368ff6ca3fdcc2758ea563e0e6e8c327b1&profile_id=164&download=1
 Saqoo: https://player.vimeo.com/external/267555974.sd.mp4?s=1c30877f5f806958d9aaf9a64d3c1efb35d420b8&profile_id=164&download=1
@@ -738,8 +738,8 @@ Library: https://player.vimeo.com/external/267552253.sd.mp4?s=6a9e7188e470e57516
 Notebook: https://player.vimeo.com/external/267544720.sd.mp4?s=57f03e9fc491e514f658b5052dd3c28491abaf4a&profile_id=164&download=1
 Abu Dhabi Media Company: https://player.vimeo.com/external/267654548.sd.mp4?s=110254dd1eb7ca11310b7b6c5ba246ecf82f60ef&profile_id=164&download=1
 Plus: https://player.vimeo.com/external/267543402.sd.mp4?s=97d347e7b47116e0f80791a47acf135c3c62cd9f&profile_id=164&download=1
-National Center For Statistics: https://player.vimeo.com/external/267659640.sd.mp4?s=b56616633b1754d770ad265f336b85deb18de8f3&profile_id=164&download=1
-National Center For Statistics: https://player.vimeo.com/external/267659708.sd.mp4?s=a907817ddd857895a22788e55900cf37ae94cb89&profile_id=164&download=1
+National Center For Statistics 1: https://player.vimeo.com/external/267659640.sd.mp4?s=b56616633b1754d770ad265f336b85deb18de8f3&profile_id=164&download=1
+National Center For Statistics 2: https://player.vimeo.com/external/267659708.sd.mp4?s=a907817ddd857895a22788e55900cf37ae94cb89&profile_id=164&download=1
 Triangle: https://player.vimeo.com/external/267550325.sd.mp4?s=da2c3eba805eab2763965647fd3f3893c5a21438&profile_id=164&download=1
 Question: https://player.vimeo.com/external/267545882.sd.mp4?s=cffd0a3dc369f87b3fbbba38149fa3702e57811a&profile_id=164&download=1
 Youth And Sports Welfare: https://player.vimeo.com/external/267660142.sd.mp4?s=b8d7bc6147a5077821945a70aad5bc905980161b&profile_id=164&download=1
@@ -763,7 +763,7 @@ Cap: https://player.vimeo.com/external/267558012.sd.mp4?s=481e3ec033b2caf65808e9
 Button: https://player.vimeo.com/external/267569419.sd.mp4?s=f5e83575b5e0ca7104a309e5ac88e6aac201bb2c&profile%20id=164&download=1
 Burqa: https://player.vimeo.com/external/267373604.sd.mp4?s=9492bed41bfb9548f008df7d87b5cb911fb9bca8&profile%20id=164&download=1
 Black Head Ring: https://player.vimeo.com/external/267379194.sd.mp4?s=30847855150d4c299df0bf763fb89bdcf2187dc5&profile%20id=164&download=1
-Day: https://player.vimeo.com/external/267462451.sd.mp4?s=c9e82ba92d81d6201c29718a9bc335e02a6527cd&profile%20id=164&download=1
+Day 2: https://player.vimeo.com/external/267462451.sd.mp4?s=c9e82ba92d81d6201c29718a9bc335e02a6527cd&profile%20id=164&download=1
 Bangles: https://player.vimeo.com/external/267377294.sd.mp4?s=c12963afa1207db68d8b5c0c98a598995354d558&profile%20id=164&download=1
 Abaya: https://player.vimeo.com/external/267378976.sd.mp4?s=b487e02b4ccdd32d8c3db697e3d09eb5378c8d20&profile%20id=164&download=1
 Winter: https://player.vimeo.com/external/267461770.sd.mp4?s=7bd9039e275a395b1f9c723bf86b3b3006969a2f&profile%20id=164&download=1
@@ -799,7 +799,7 @@ Century: https://player.vimeo.com/external/267462915.sd.mp4?s=2d8968f507a5875ab4
 Colored Lenses: https://player.vimeo.com/external/267557431.sd.mp4?s=d62b3149e98ffd7686ac5362fde00f490ff573ce&profile%20id=164&download=1
 Tuesday: https://player.vimeo.com/external/267461252.sd.mp4?s=911a6ea74ec6580a0f9c1e83b425bedb2b13d3dc&profile%20id=164&download=1
 Chain: https://player.vimeo.com/external/267569915.sd.mp4?s=e4bbab32f34add16a518fecd19784ddd8cb697d6&profile%20id=164&download=1
-Tommorow: https://player.vimeo.com/external/267462561.sd.mp4?s=a30a217910f9e8ce75b1721a72f4c97941f3b7f8&profile%20id=164&download=1
+Tommorw: https://player.vimeo.com/external/267462561.sd.mp4?s=a30a217910f9e8ce75b1721a72f4c97941f3b7f8&profile%20id=164&download=1
 Cap: https://player.vimeo.com/external/267379820.sd.mp4?s=3d88df9a599076ec5702f82aa7f009d66ba8388f&profile%20id=164&download=1
 Time: https://player.vimeo.com/external/267462347.sd.mp4?s=dee0402ffd72d72acdc77def04baa1310f9d4bea&profile%20id=164&download=1
 Contact Lense: https://player.vimeo.com/external/267570677.sd.mp4?s=f239ae98463f71f1763c0108edb31b0a0c0219f0&profile%20id=164&download=1
@@ -832,8 +832,8 @@ Eyepencil: https://player.vimeo.com/external/267373456.sd.mp4?s=070d28bd34249ad1
 Ain Khat: https://player.vimeo.com/external/267457929.sd.mp4?s=7c0f72aa1d1ce04b80fb3c1af5105e6f47923137&profile%20id=164&download=1
 Eyelashes: https://player.vimeo.com/external/267569185.sd.mp4?s=69761ff1531668924228b23245d762f10db902d4&profile%20id=164&download=1
 Eyeglasses: https://player.vimeo.com/external/267559209.sd.mp4?s=585e3c1097f2b1ba57fe8b2af52ce5f64cf42d6c&profile%20id=164&download=1
-Qasrul Emiraat: https://player.vimeo.com/external/267458807.sd.mp4?s=b46fb80b9bc2c7947e86a380e9e410387fc434fd&profile%20id=164&download=1
-Qasrul Emiraat: https://player.vimeo.com/external/267458774.sd.mp4?s=7f1aa4ba33c3f5529cb4a76f04c165d09269bd1b&profile%20id=164&download=1
+Qasrul Emiraat 2: https://player.vimeo.com/external/267458807.sd.mp4?s=b46fb80b9bc2c7947e86a380e9e410387fc434fd&profile%20id=164&download=1
+Qasrul Emiraat 1: https://player.vimeo.com/external/267458774.sd.mp4?s=7f1aa4ba33c3f5529cb4a76f04c165d09269bd1b&profile%20id=164&download=1
 Eyeglasses: https://player.vimeo.com/external/267559040.sd.mp4?s=cf898241b3f357ffb8e7f6e143075dfa6a538dab&profile%20id=164&download=1
 Earings: https://player.vimeo.com/external/267380200.sd.mp4?s=749cf40f2c7a08ef00793c9d7b486e753f307d9c&profile%20id=164&download=1
 Qariyatul Alamiya: https://player.vimeo.com/external/267452660.sd.mp4?s=b06f03f6bad3a39732940f92f92d6e0593cf1e7a&profile%20id=164&download=1
@@ -850,7 +850,7 @@ Kasir Amwaaj: https://player.vimeo.com/external/267459002.sd.mp4?s=80ae64c58df62
 Head Scarf Man: https://player.vimeo.com/external/267379441.sd.mp4?s=2dbfd729d673355d45e5a785ecea8ab2d95d9962&profile%20id=164&download=1
 Head Scarf Man: https://player.vimeo.com/external/267379070.sd.mp4?s=ded0113915db05289e71c3b8754828d8d9233d76&profile%20id=164&download=1
 Jumairah: https://player.vimeo.com/external/267454908.sd.mp4?s=11a8043d14b0ac6582fe4d758d242c1ed7f06ed9&profile%20id=164&download=1
-JBR: https://player.vimeo.com/external/267455090.sd.mp4?s=e2e6c8d06b4f103c9c10de7de2fec4d03e2a3bac&profile%20id=164&download=1
+Jbr: https://player.vimeo.com/external/267455090.sd.mp4?s=e2e6c8d06b4f103c9c10de7de2fec4d03e2a3bac&profile%20id=164&download=1
 Head Jewelry: https://player.vimeo.com/external/267378706.sd.mp4?s=0f8b9337e861ad62d8767b49c2f3b8503f0b87ac&profile%20id=164&download=1
 Jazera Nakhla: https://player.vimeo.com/external/267454606.sd.mp4?s=4cb6b21634a05cfe1dc54ccdca9d8255395ef050&profile%20id=164&download=1
 Jamiya Shaikh Zayd: https://player.vimeo.com/external/267460756.sd.mp4?s=5637a652779be78c3402632117c31eb251fe2c2a&profile%20id=164&download=1
@@ -913,10 +913,10 @@ Pearl: https://player.vimeo.com/external/267449804.sd.mp4?s=89e5fc1a3b7dcf495be2
 Gray: https://player.vimeo.com/external/267445396.sd.mp4?s=2a4c5190165eef908419c390217550e0ce7e6842&profile_id=164&download=1
 Green: https://player.vimeo.com/external/267448523.sd.mp4?s=dd5ea7147fa719c37a2d58c221709e6128d7982c&profile_id=164&download=1
 Golden: https://player.vimeo.com/external/267449002.sd.mp4?s=2e55e04c2a69a99d1545195a51f782bf249f4256&profile_id=164&download=1
-Brown: https://player.vimeo.com/external/267447141.sd.mp4?s=74fd07c457d81b546b66d09d4918b020891de4f9&profile_id=164&download=1
+Brown 02: https://player.vimeo.com/external/267447141.sd.mp4?s=74fd07c457d81b546b66d09d4918b020891de4f9&profile_id=164&download=1
 Skyblue: https://player.vimeo.com/external/267450133.sd.mp4?s=1f8be2b759678e133013e1dcc101e170120b6cfa&profile_id=164&download=1
-Brown: https://player.vimeo.com/external/267446735.sd.mp4?s=0181276a2b59552553ab7ef483a16b047d128e18&profile_id=164&download=1
-Black: https://player.vimeo.com/external/267443496.sd.mp4?s=87c2adc1fd571cd0791385c99c33d58134c306f4&profile_id=164&download=1
+Brown 01: https://player.vimeo.com/external/267446735.sd.mp4?s=0181276a2b59552553ab7ef483a16b047d128e18&profile_id=164&download=1
+Black 01: https://player.vimeo.com/external/267443496.sd.mp4?s=87c2adc1fd571cd0791385c99c33d58134c306f4&profile_id=164&download=1
 Al Alwaan: https://player.vimeo.com/external/267441021.sd.mp4?s=b19f54d4187f1bf75e85dabdb2b1f132d1b0e2ab&profile_id=164&download=1
 Red: https://player.vimeo.com/external/267447783.sd.mp4?s=631ad04ac09be609a0a88cb695c81d21dd250813&profile_id=164&download=1
 Purple: https://player.vimeo.com/external/267444717.sd.mp4?s=bac46afbd6db552c3fad4b20fe32def228f7ec63&profile_id=164&download=1
@@ -1134,7 +1134,7 @@ Card Type: https://player.vimeo.com/external/267528832.sd.mp4?s=188596a3a7368922
 Haa: https://player.vimeo.com/external/267405744.sd.mp4?s=8d2da808554eec281fda23353f2787863aafd2e3&profile_id=164&download=1
 Caesarean Birth: https://player.vimeo.com/external/267550397.sd.mp4?s=581d24caf2790b2d20fe7da32d760c0684f34e5d&profile%20id=164&download=1
 Zua: https://player.vimeo.com/external/267413379.sd.mp4?s=c63a3f3d2fa318be183cce51afd2e7962b4833e5&profile_id=164&download=1
-Caesarean Birth: https://player.vimeo.com/external/267550720.sd.mp4?s=54ce4d2517e0db67a62381122af95a9611d5afb4&profile%20id=164&download=1
+Caesarean Birth 2: https://player.vimeo.com/external/267550720.sd.mp4?s=54ce4d2517e0db67a62381122af95a9611d5afb4&profile%20id=164&download=1
 Breastfeeding: https://player.vimeo.com/external/267549618.sd.mp4?s=be493fee04177bbb9d17bfd5587723f95204d69a&profile%20id=164&download=1
 Blood: https://player.vimeo.com/external/267534012.sd.mp4?s=a6ead8d666846f7b6dddaadbf74e2f51575aed1f&profile%20id=164&download=1
 Blood Pressure Gauge: https://player.vimeo.com/external/267548677.sd.mp4?s=fda77d2b6c6305179f16e5e42c4f8f63bd134d92&profile%20id=164&download=1
@@ -1185,8 +1185,8 @@ Girrafe: https://player.vimeo.com/external/267528844.sd.mp4?s=e2ed5dc5b1024655f7
 Frog: https://player.vimeo.com/external/267542146.sd.mp4?s=c4d1d47575d76e2838a0aae95ecddead95358e89&profile_id=164&download=1
 Lizard: https://player.vimeo.com/external/267537332.sd.mp4?s=551c8b96e044bcbac81861a31a48e2978d415ca7&profile_id=164&download=1
 Zebra: https://player.vimeo.com/external/267535194.sd.mp4?s=bd46e699d447f623e9f7ed3cf19c5efabf577f3d&profile_id=164&download=1
-Gorilla: https://player.vimeo.com/external/267529310.sd.mp4?s=a298c8a7a863c29e299a4aa21587da15501e1138&profile_id=164&download=1
-Ostrich: https://player.vimeo.com/external/267535682.sd.mp4?s=26471fad39847e411de9927a13a6286d83c566b6&profile_id=164&download=1
+Gorilla 2: https://player.vimeo.com/external/267529310.sd.mp4?s=a298c8a7a863c29e299a4aa21587da15501e1138&profile_id=164&download=1
+Ostrich 2: https://player.vimeo.com/external/267535682.sd.mp4?s=26471fad39847e411de9927a13a6286d83c566b6&profile_id=164&download=1
 Octopus: https://player.vimeo.com/external/267537077.sd.mp4?s=dbfa094e900820f3b8e137a8b3143c864ee251f2&profile_id=164&download=1
 Ostrich: https://player.vimeo.com/external/267535440.sd.mp4?s=211e60eca9e93c4c8cbeb69e7cff83903c7be7bc&profile_id=164&download=1
 Owl: https://player.vimeo.com/external/267540665.sd.mp4?s=32a80193767d3acc350e52d7073b6c251958f2a7&profile_id=164&download=1
@@ -1328,7 +1328,7 @@ Switch: https://player.vimeo.com/external/267536446.sd.mp4?s=5032b5b48a47b46e217
 Swimming Pool: https://player.vimeo.com/external/267449630.sd.mp4?s=60d389e7c61d92a1604fcd710a0b23fd496200b4&profile%20id=164&download=1
 Tray: https://player.vimeo.com/external/267448320.sd.mp4?s=f441631eea3e8b386843f75037e617bfc3a27a3b&profile%20id=164&download=1
 Window: https://player.vimeo.com/external/267533991.sd.mp4?s=4b1fb74dd1cbdbde7cf266bcdb55790337dd940d&profile%20id=164&download=1
-Door: https://player.vimeo.com/external/267445613.sd.mp4?s=8565c50484d97c7fb55dc8b91d7673af4c9a56f8&profile%20id=164&download=1
+Door 1: https://player.vimeo.com/external/267445613.sd.mp4?s=8565c50484d97c7fb55dc8b91d7673af4c9a56f8&profile%20id=164&download=1
 Curtain: https://player.vimeo.com/external/267447763.sd.mp4?s=4bd788050b0a1f71c56f7870a64e4e6e6e685408&profile%20id=164&download=1
 Painting: https://player.vimeo.com/external/267448749.sd.mp4?s=1a742d950c9344b6ac8e7b47a78c2ccb0cd9d70b&profile%20id=164&download=1
 Oven: https://player.vimeo.com/external/267535708.sd.mp4?s=377a35a8d80324f111a42808e26f15501c825394&profile%20id=164&download=1
@@ -1344,3 +1344,64 @@ Hanger: https://player.vimeo.com/external/267534394.sd.mp4?s=efc5a8ab4479b1fb666
 Hanger: https://player.vimeo.com/external/267534309.sd.mp4?s=6eff012d78e6f6ffdeb4623babe75c3960e5ef5b&profile%20id=164&download=1
 Hanger: https://player.vimeo.com/external/267541166.sd.mp4?s=4d9f08639e05b5f0a117fce6b5bfec84a39d75f1&profile%20id=164&download=1
 Guest Room: https://player.vimeo.com/external/267534875.sd.mp4?s=00a6982aeea34e97f26b64cc1b308bb32f3853d2&profile%20id=164&download=1
+alcohol: youtube_videos/alcohol.mp4
+america: youtube_videos/america.mp4
+angry: youtube_videos/angry.mp4
+army: youtube_videos/army.mp4
+bank: youtube_videos/bank.mp4
+bathroom: youtube_videos/bathroom.mp4
+beautiful: youtube_videos/beautiful.mp4
+boss: youtube_videos/boss.mp4
+boy: youtube_videos/boy.mp4
+brother: youtube_videos/brother.mp4
+children: youtube_videos/children.mp4
+city: youtube_videos/city.mp4
+coffee: youtube_videos/coffee.mp4
+court: youtube_videos/court.mp4
+cousin: youtube_videos/cousin.mp4
+divorce: youtube_videos/divorce.mp4
+family: youtube_videos/family.mp4
+father: youtube_videos/father.mp4
+flirt: youtube_videos/flirt.mp4
+friend: youtube_videos/friend.mp4
+fun: youtube_videos/fun.mp4
+girl: youtube_videos/girl.mp4
+help: youtube_videos/help.mp4
+home: youtube_videos/home.mp4
+honest: youtube_videos/honest.mp4
+hospital: youtube_videos/hospital.mp4
+hotel: youtube_videos/hotel.mp4
+hour: youtube_videos/hour.mp4
+how: youtube_videos/how.mp4
+hungry: youtube_videos/hungry.mp4
+i love you: youtube_videos/i-love-you.mp4
+ice cream: youtube_videos/ice-cream.mp4
+laughing: youtube_videos/laughing.mp4
+lawyer: youtube_videos/lawyer.mp4
+liar: youtube_videos/liar.mp4
+month: youtube_videos/month.mp4
+mother: youtube_videos/mother.mp4
+old: youtube_videos/old.mp4
+police: youtube_videos/police.mp4
+president: youtube_videos/president.mp4
+problem: youtube_videos/problem.mp4
+right: youtube_videos/right.mp4
+sand dunes: youtube_videos/sand-dunes.mp4
+school: youtube_videos/school.mp4
+sick: youtube_videos/sick.mp4
+sister: youtube_videos/sister.mp4
+sport: youtube_videos/sport.mp4
+taxi: youtube_videos/taxi.mp4
+tea: youtube_videos/tea.mp4
+tent: youtube_videos/tent.mp4
+thank you: youtube_videos/thank-you.mp4
+travel: youtube_videos/travel.mp4
+understand: youtube_videos/understand.mp4
+university: youtube_videos/university.mp4
+water: youtube_videos/water.mp4
+welcome: youtube_videos/welcome.mp4
+where: youtube_videos/where.mp4
+wife: youtube_videos/wife.mp4
+wrong: youtube_videos/wrong.mp4
+year: youtube_videos/year.mp4
+young: youtube_videos/young.mp4

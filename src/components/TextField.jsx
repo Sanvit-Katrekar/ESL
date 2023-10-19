@@ -3,6 +3,7 @@ import React from 'react';
 
 const TextField = ({ onChange }) => {
   return (
+<<<<<<< HEAD
     <div style={textFieldContainerStyles}>
       <input
         type="text"
@@ -47,4 +48,14 @@ const audioIconStyles = {
   fontSize: '20px',
 };
 
+=======
+    <input
+      type="text"
+      placeholder="Enter text here..."
+      onChange={onChange}
+    />
+  );
+};
+
+>>>>>>> origin/new_sanvit
 export default TextField;
