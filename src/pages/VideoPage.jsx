@@ -3,24 +3,24 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import TextField from '../components/TextField';
 import VideoPlayer from '../components/VideoPlayer';
+import { makeGet, makePost } from '../server_functions/request';
 
 const VideoPage = () => {
   const [text, setText] = useState('');
   const [loading, setLoading] = useState(false);
-  const videoSource = '/esldemo.mp4';
+  const [videoSource, setVideoSource] = useState('/esldemo.mp4');
+  console.log("source:" + videoSource)
 
   const handleTextChange = (e) => {
     setText(e.target.value);
+    console.log("video source:" +videoSource)
   };
 
-  const handleSubmit = () => {
+async function handleSubmit() {
     setLoading(true);
-
-    // Simulate an asynchronous operation (e.g., API call)
-    setTimeout(() => {
-      setLoading(false);
-      // Navigate to the video page
-    }, 2000);
+    var translation = await makePost(text);
+    console.log("video_path: " + translation.path)
+    setVideoSource(translation.video_path);
   };
 
   const handleGenerateAgain = () => {

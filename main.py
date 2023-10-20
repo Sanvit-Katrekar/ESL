@@ -9,6 +9,7 @@ from entity.status import Status
 from usecase.check_status import check_status
 import os, shutil
 from uuid import uuid4
+from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI(
     title="English to ESL",
@@ -31,6 +32,14 @@ app = FastAPI(
             "description": "Check status of prediction request."
         }
     ],
+)
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:9090"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 @app.get("/test", response_model=dict, tags=["test"])
