@@ -7,7 +7,7 @@ import VideoPlayer from '../components/VideoPlayer';
 const VideoPage = () => {
   const [text, setText] = useState('');
   const [loading, setLoading] = useState(false);
-  const videoSource = '/esldemo.mp4';
+  const videoSource = '/public/esl_demo/he Lion is swimming in the swimming pool while The Baker is baking a cake in the oven.mp4';
 
   const handleTextChange = (e) => {
     setText(e.target.value);
