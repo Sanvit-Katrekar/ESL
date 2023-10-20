@@ -8,7 +8,7 @@ import { makeGet, makePost } from '../server_functions/request';
 const VideoPage = () => {
   const [text, setText] = useState('');
   const [loading, setLoading] = useState(false);
-  const [videoSource, setVideoSource] = useState('/esldemo.mp4');
+  const [videoSource, setVideoSource] = useState('/bruhh.mp4');
   console.log("source:" + videoSource)
 
   const handleTextChange = (e) => {
@@ -18,9 +18,14 @@ const VideoPage = () => {
 
 async function handleSubmit() {
     setLoading(true);
-    var translation = await makePost(text);
-    console.log("video_path: " + translation.path)
-    setVideoSource(translation.video_path);
+    makePost(text).then((data)=>{
+      console.log(text)
+      console.log("video_path: " + data.video_path)
+      setVideoSource(data.video_path);
+      console.log("bruhhhh"+videoSource)
+      setLoading(false);
+    })
+    
   };
 
   const handleGenerateAgain = () => {
@@ -32,7 +37,8 @@ async function handleSubmit() {
       <div style={leftContainerStyles}>
         <div style={innerContainerStyles}>
           <h2 style={titleStyles}>Emirati Sign Language</h2>
-          <p style={descriptionStyles}>Empower communication with our groundbreaking tool translating English text to Emirati Sign Language seamlessly. Enhance accessibility and inclusion effortlessly on our innovative platform.</p>
+          <img src="/esl_logo.jpg" width="280" height="213" />
+          <h5 style={descriptionStyles}>Enhance communication and accessibility with Emirati Sign Language speakers </h5>
           <p style={descriptionStyles}> Enter the text below to convert to ESL</p>
           <div style={textInputContainerStyles}>
             <TextField onChange={handleTextChange} />
@@ -41,9 +47,7 @@ async function handleSubmit() {
             </button>
           </div>
           {loading && <div style={loadingStyles}>Loading...</div>}
-          <Link to="/text">
-            <button style={buttonStyles} onClick={handleGenerateAgain}>Generate Again</button>
-          </Link>
+          
         </div>
       </div>
       <div style={rightContainerStyles}>
@@ -93,7 +97,7 @@ const descriptionStyles = {
   color: '#555',
   fontSize: '18px', // Increased font size
   fontFamily: 'Arial, sans-serif', // Custom font
-  marginBottom: '20px',
+  marginBottom: '5px',
 };
 
 const textInputContainerStyles = {

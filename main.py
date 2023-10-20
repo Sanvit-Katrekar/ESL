@@ -47,12 +47,12 @@ async def test() -> dict:
     return {"message": "API deployment successful!"}
 
 @app.post("/predict", response_model=Response, tags=["predict"])
-async def english_to_esl(video_details: VideoCreateRequest, background_tasks: BackgroundTasks) -> Response:
+def english_to_esl(video_details: VideoCreateRequest, background_tasks: BackgroundTasks) -> Response:
     print("Generating a response:", video_details.english_sentence, "video_name: ", video_details.video_name)
     if not video_details.video_name:
         video_details.video_name = f"{str(uuid4())}.mp4"
-    background_tasks.add_task(
-        convert_english_to_esl,
+    
+    convert_english_to_esl(
         video_details.english_sentence,
         video_details.video_name
     )
