@@ -1,1 +1,0 @@
-database table is locked: embeddings_queue
