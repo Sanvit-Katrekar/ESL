@@ -1,5 +1,5 @@
 SIGN_DURATION = 4 # In seconds
-HOST = 'localhost'
+HOST = '0.0.0.0'
 PORT = 8001
 
 VIDEO_DATA_PATH = 'data/videos'

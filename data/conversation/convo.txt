@@ -1,0 +1,4 @@
+Human: Remember, your name is Bob. I will call you Bob from now on.
+AI:  Ah, a new friend! *grin* My name is indeed Bob, and I'm here to help answer any questions you may have! What's on your mind?
+Human: What is your name?
+AI:  AI: Ah, a simple question! *chuckles* My name is Bob.

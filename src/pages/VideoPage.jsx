@@ -27,10 +27,6 @@ async function handleSubmit() {
     })
     
   };
-
-  const handleGenerateAgain = () => {
-    window.location.reload();
-  };
   
   return (
     <div style={pageStyles}>
