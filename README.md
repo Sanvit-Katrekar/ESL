@@ -1,7 +1,7 @@
-# ESL - Generative AI competition
+# POSTMAN HACKATHON
 ---
-## Converting English/Arabic to Emirati Sign Language
-
+## Converting Sign Language to English
+s
 ### The Plan
 
 Use LLMs (LLAMA2 and JAIS) to convert English/Arabic sentences into ESL animations.
@@ -52,8 +52,4 @@ pip install -r requirements.txt
 
 Create a new file names .env and add the values for the below variables:
 
-MYSQL_HOST=xxx
-MYSQL_DATABASE=xxx
-MYSQL_USER=xxx
-MYSQL_PASSWORD=xxx
-MYSQL_PORT=xxx
+PEXELS_KEY=xxx

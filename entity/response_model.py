@@ -1,5 +1,5 @@
 from pydantic import BaseModel
-from typing import Optional
+from typing import Optional,List
 
 class ResponseBase(BaseModel):
     status: int = 1
@@ -7,3 +7,6 @@ class ResponseBase(BaseModel):
 
 class Response(ResponseBase):
     video_path: Optional[str] = None
+
+class Images:
+    image_list:List[str]

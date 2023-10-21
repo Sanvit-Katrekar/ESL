@@ -4,3 +4,4 @@ PORT = 8001
 
 VIDEO_DATA_PATH = 'data/videos'
 VIDEO_OUTPUT_PATH = 'src/public'
+PEXELS_ROOT="https://api.pexels.com/v1/search/"
