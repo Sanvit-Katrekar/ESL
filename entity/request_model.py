@@ -4,3 +4,6 @@ from typing import Optional
 class VideoCreateRequest(BaseModel):
     english_sentence: str
     video_name: Optional[str] = None
+
+class ImageRequest(BaseModel):
+    keyword:str

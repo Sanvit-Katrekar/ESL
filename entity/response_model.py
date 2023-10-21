@@ -7,3 +7,6 @@ class ResponseBase(BaseModel):
 
 class Response(ResponseBase):
     video_path: Optional[str] = None
+
+class ResponseImages(ResponseBase):
+    image_list:List[str]

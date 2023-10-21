@@ -28,5 +28,7 @@ def get_pexels_images(keyword: str) -> list:
                 print(i, data.get("photos"))
                 break
         return urls
+    else:
+        return []
 
-
+#print(get_pexels_images("monkey"))

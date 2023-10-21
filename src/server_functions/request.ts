@@ -1,4 +1,4 @@
-export async function makePost(searchword: string | null = null) {
+export async function getImages(searchword: string | null = null) {
   console.log("posting:")
     const apiUrl = 'http://localhost:8001/get-images'; 
     const data = { keyword: searchword };
@@ -46,3 +46,18 @@ export async function getPredictionStatus(){
     return await res.json();
 }
 
+export async function makePost(words: string | null = null) {
+  console.log("posting:")
+    const apiUrl = 'http://localhost:8001/predict'; 
+    const data = { english_sentence: words };
+  
+    const res = await fetch(apiUrl, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    });
+  
+    return await res.json();
+}

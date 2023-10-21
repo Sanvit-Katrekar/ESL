@@ -3,8 +3,8 @@ from fastapi import FastAPI, BackgroundTasks
 from constants import *
 import uvicorn
 from usecase.en_to_esl import convert_english_to_esl
-from entity.response_model import Response, ResponseBase
-from entity.request_model import VideoCreateRequest
+from entity.response_model import Response, ResponseBase,ResponseImages
+from entity.request_model import VideoCreateRequest,ImageRequest
 from entity.status import Status
 from entity.images import Images
 from usecase.check_status import check_status
@@ -68,11 +68,11 @@ async def check_prediction_status(video_name: str) -> ResponseBase:
     status = check_status(video_name)
     return ResponseBase(**status)
 
-@app.post("/get-images",response_model=ResponseBase, tags=["images"])
-def get_images(keyword: str) ->Images :
-    print("Checking status of", keyword)
-    image_list = get_pexels_images(keyword)
-    return (image_list)
+@app.post("/get-images",response_model=ResponseImages, tags=["images"])
+def get_images(img: ImageRequest) -> ResponseImages :
+    print("Checking status of", img.keyword)
+    image_list = get_pexels_images(img.keyword)
+    return (ResponseImages(image_list=image_list))
 
 
 @app.delete("/cleanup", response_model=ResponseBase, tags=["cleanup"])

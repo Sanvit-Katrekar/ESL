@@ -3,10 +3,11 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import TextField from '../components/TextField';
 import VideoPlayer from '../components/VideoPlayer';
-import { makeGet, makePost } from '../server_functions/request';
+import { makeGet, makePost,getImages } from '../server_functions/request';
 import VideoInput from '../components/Dropzone';
 const VideoPage = () => {
   const [text, setText] = useState('');
+  const [img, setImg] = useState('/esl_logo.jpg');
   const [loading, setLoading] = useState(false);
   const [videoSource, setVideoSource] = useState('/bruhh.mp4');
 
@@ -17,15 +18,22 @@ const VideoPage = () => {
 
 async function handleSubmit() {
     setLoading(true);
-    makePost(text).then((data)=>{
-     
+    getImages(text).then((data)=>{
+      console.log(data.image_list[0]);
+      setImg(data.image_list[0])
+      //setImg(data)
       //console.log("images: " + data)
-      setVideoSource(data);
+     //setVideoSource(data);
+      setLoading(false);
+    })
+    makePost(text).then((data)=>{
+      setVideoSource(data.video_path);
       setLoading(false);
     })
     
+    
   };
-
+  console.log("Image HREF is ",img);
   return (
     <div style={pageStyles}>
       <div style={leftContainerStyles}>
@@ -47,9 +55,15 @@ async function handleSubmit() {
           
         </div>
       </div>
-      <div style={rightContainerStyles}>
+      <div className={rightContainerStyles}>
+        <div className='z-3 w-100'>
         {/*<VideoPlayer videoSource={videoSource} />*/}
-        <VideoInput width={400} height={300}/>
+        {/*<VideoInput width={400} height={300}/>*/}
+        
+        <img src={img} width="400px" height="600px"/>
+       
+        <VideoPlayer videoSource={videoSource} />
+      </div>
       </div>
     </div>
   );
@@ -66,7 +80,7 @@ const pageStyles = {
 };
 
 const leftContainerStyles = {
-  flex: 1,
+  width:"50%",
   background: '#fff8dc',
   borderRadius: '20px', // Rounded corners
   padding: '20px',
@@ -80,7 +94,7 @@ const innerContainerStyles = {
 };
 
 const rightContainerStyles = {
-  flex: 1,
+  width:"50%",
 };
 
 const titleStyles = {
