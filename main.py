@@ -6,6 +6,7 @@ from usecase.en_to_esl import convert_english_to_esl
 from entity.response_model import Response, ResponseBase
 from entity.request_model import VideoCreateRequest
 from entity.status import Status
+from entity.images import Images
 from usecase.check_status import check_status
 from usecase.get_pexels_image import get_pexels_images
 import os, shutil
@@ -67,8 +68,8 @@ async def check_prediction_status(video_name: str) -> ResponseBase:
     status = check_status(video_name)
     return ResponseBase(**status)
 
-@app.get("/get-images", tags=["images"])
-def get_images(keyword: str):
+@app.post("/get-images",response_model=ResponseBase, tags=["images"])
+def get_images(keyword: str) ->Images :
     print("Checking status of", keyword)
     image_list = get_pexels_images(keyword)
     return (image_list)

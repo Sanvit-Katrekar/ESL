@@ -1,0 +1,23 @@
+.img{
+    display: block;
+    width:40%;
+    height: auto;
+    margin:auto;
+  }
+
+
+  .dropzone {
+    border: 2px dashed var(--midwhite);
+    padding: 60px;
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  .dropzone.active {
+    border-color: var(--black);
+  }
+
+  .dropzoneimage{
+    width: 100%;
+    height: auto;
+  }

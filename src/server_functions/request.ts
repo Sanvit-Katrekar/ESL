@@ -1,7 +1,7 @@
-export async function makePost(sentence: string | null = null) {
+export async function makePost(searchword: string | null = null) {
   console.log("posting:")
-    const apiUrl = 'http://localhost:8001/predict'; 
-    const data = { english_sentence: sentence };
+    const apiUrl = 'http://localhost:8001/get-images'; 
+    const data = { keyword: searchword };
   
     const res = await fetch(apiUrl, {
       method: 'POST',

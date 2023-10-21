@@ -4,46 +4,43 @@ import { Link } from 'react-router-dom';
 import TextField from '../components/TextField';
 import VideoPlayer from '../components/VideoPlayer';
 import { makeGet, makePost } from '../server_functions/request';
-
+import VideoInput from '../components/Dropzone';
 const VideoPage = () => {
   const [text, setText] = useState('');
   const [loading, setLoading] = useState(false);
   const [videoSource, setVideoSource] = useState('/bruhh.mp4');
-  console.log("source:" + videoSource)
 
   const handleTextChange = (e) => {
     setText(e.target.value);
-    console.log("video source:" +videoSource)
+    console.log(text);
   };
 
 async function handleSubmit() {
     setLoading(true);
     makePost(text).then((data)=>{
-      console.log(text)
-      console.log("video_path: " + data.video_path)
-      setVideoSource(data.video_path);
-      console.log("bruhhhh"+videoSource)
+     
+      //console.log("images: " + data)
+      setVideoSource(data);
       setLoading(false);
     })
     
   };
 
-  const handleGenerateAgain = () => {
-    window.location.reload();
-  };
-  
   return (
     <div style={pageStyles}>
       <div style={leftContainerStyles}>
         <div style={innerContainerStyles}>
-          <h2 style={titleStyles}>Emirati Sign Language</h2>
-          <img src="/esl_logo.jpg" width="280" height="213" />
-          <h5 style={descriptionStyles}>Enhance communication and accessibility with Emirati Sign Language speakers </h5>
-          <p style={descriptionStyles}> Enter the text below to convert to ESL</p>
+          <h2 style={titleStyles}>Sign Language Chat Assistant</h2>
+        
+          <h5 style={descriptionStyles}>Get Started with: </h5>
+          <h7 style={descriptionStyles}>Looking for images , Getting new Ideas , or Planning your Day </h7>
+        
           <div style={textInputContainerStyles}>
             <TextField onChange={handleTextChange} />
+            
+            {/*<MyUploader/>*/}
             <button style={submitButtonStyles} onClick={handleSubmit}>
-              Submit
+              ASK
             </button>
           </div>
           {loading && <div style={loadingStyles}>Loading...</div>}
@@ -51,7 +48,8 @@ async function handleSubmit() {
         </div>
       </div>
       <div style={rightContainerStyles}>
-        <VideoPlayer videoSource={videoSource} />
+        {/*<VideoPlayer videoSource={videoSource} />*/}
+        <VideoInput width={400} height={300}/>
       </div>
     </div>
   );
